@@ -29,3 +29,21 @@ File operations
      - 'find . -name "*.txt" -exec mv {} dir1 \;'
 
 
+Other operations
+----------------
+'tmux' - A terminal multiplexer. Tmux is the "unbinding" tool for sessions and windows, separating them completely from the terminal. It allows you to create multiple sessions, each with multiple windows, each with multiple panes. It also allows you to detach from a session and reattach later, and even to reattach from a different machine.
+ - 'tmux new -s session_name' - Create a new session named session_name
+ - 'tmux ls' - List all sessions
+ - 'tmux attach -t session_name' - Attach to a session named session_name
+ - 'tmux switch -t session_name' - Switch to a session named with specified names
+ - 'tmux kill-session -t session_name' - Kill a session named session_name
+ - 'tmux detach' - Detach from the current session
+ - 'tmux rename-session -t old_name new_name' - Rename a session named old_name to new_name
+ - 'tmux new-window -n window_name' - Create a new window named window_name
+ - 'tmux rename-window -t old_name new_name' - Rename a window named old_name to new_name
+ - 'tmux kill-window -t window_name' - Kill a window named window_name
+ - 'tmux split-window -h' - Split the current window horizontally
+ - 'tmux split-window -v' - Split the current window vertically
+ - 'tmux select-pane -t session_name' - Select the sessions with specified names
+ - 'tmux list-keys' - List all key bindings
+ - 'tmux list-commands' - List all commands
